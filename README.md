@@ -26,3 +26,16 @@ Headers:
 `Cache-Control: no-store, must-revalidate`
 
 See [ping.py](flask_ping.ping.py) for implementation details
+
+
+## Run Tests Locally
+
+#### Dependencies
+
+- [Docker](https://www.docker.com/)
+- [gnu make](https://www.gnu.org/software/make/)
+
+To run tests use the following command:
+```bash
+make tests
+```
