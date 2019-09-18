@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  flask-ping:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "bash -c 'pip install -e . && pytest -v'"
+    volumes:
+      - ./flask_ping/:/srv/app/flask_ping/

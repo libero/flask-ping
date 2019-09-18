@@ -1,0 +1,16 @@
+language: minimal
+
+services:
+  - docker
+
+install:
+    - travis_retry make build
+
+script:
+    - make tests
+
+if: |
+    branch = master OR \
+    branch =~ /^(?:[0-9]|[1-9][0-9]*)\.(?:[0-9]|[1-9][0-9]*)$/ OR \
+    tag IS present OR \
+    type = pull_request
