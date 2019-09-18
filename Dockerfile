@@ -14,4 +14,4 @@ COPY . .
 
 RUN pip install -e .
 
-CMD "pytest -v"
+CMD ["pytest", "-v"]
